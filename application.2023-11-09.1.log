@@ -1,0 +1,101 @@
+09:22:17.308 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:22:17.316 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:22:17.322 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:22:20.785 [main] INFO  c.example.quizapp.QuizappApplication - Starting QuizappApplication using Java 21.0.1 with PID 12932 (D:\spring boot working\quizapp\target\classes started by Manshi in D:\spring boot working\quizapp)
+09:22:20.787 [main] INFO  c.example.quizapp.QuizappApplication - No active profile set, falling back to 1 default profile: "default"
+09:22:21.540 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:22:21.612 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+09:22:22.367 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:22:22.369 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.39] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+09:22:22.369 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+09:22:22.377 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+09:22:22.390 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:22:22.395 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:22:22.395 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+09:22:22.583 [main] INFO  o.a.c.c.C.[.[localhost].[/quizapp] - Initializing Spring embedded WebApplicationContext
+09:22:22.584 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1737 ms
+09:22:22.913 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:22:23.026 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+09:22:23.030 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+09:22:23.580 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:22:23.603 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:22:23.796 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b409a79
+09:22:23.798 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:22:23.829 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09:22:24.723 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:22:24.807 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:22:25.149 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+09:22:25.469 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:22:26.119 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:22:26.153 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/quizapp'
+09:22:26.169 [main] INFO  c.example.quizapp.QuizappApplication - Started QuizappApplication in 5.888 seconds (process running for 7.231)
+09:22:43.086 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/quizapp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:22:43.086 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:22:43.086 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+09:22:43.120 [http-nio-8080-exec-1] INFO  c.e.q.controller.QuestionController - Reached QuestionController : Requesting from service to get all questions
+09:22:43.120 [http-nio-8080-exec-1] INFO  c.e.quizapp.service.QuestionService - Reached QuestionService : Performing operation and fetching results from database 
+09:23:00.990 [http-nio-8080-exec-2] INFO  c.e.q.controller.QuestionController - Reached QuestionController : Requesting from service to get all questions by cateegoryjava
+09:23:01.017 [http-nio-8080-exec-2] INFO  c.e.quizapp.service.QuestionService - Reached QuestionService : Performing operation and fetching results from database 
+09:23:01.017 [http-nio-8080-exec-2] INFO  c.e.quizapp.service.QuestionService - Returning Questions from database by category :java
+09:23:15.634 [http-nio-8080-exec-3] INFO  c.e.q.controller.QuestionController - Reached QuestionController : Requesting from service to get all questions
+09:23:15.635 [http-nio-8080-exec-3] INFO  c.e.quizapp.service.QuestionService - Reached QuestionService : Performing operation and fetching results from database 
+09:24:59.334 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:24:59.334 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:24:59.349 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:31:36.839 [main] INFO  c.example.quizapp.QuizappApplication - Starting QuizappApplication using Java 21.0.1 with PID 4428 (D:\spring boot working\quizapp\target\classes started by Manshi in D:\spring boot working\quizapp)
+17:31:36.844 [main] INFO  c.example.quizapp.QuizappApplication - No active profile set, falling back to 1 default profile: "default"
+17:31:38.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:31:38.684 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121 ms. Found 2 JPA repository interfaces.
+17:31:40.117 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:31:40.118 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+17:31:40.141 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+17:31:40.156 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:31:40.160 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:31:40.160 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+17:31:40.372 [main] INFO  o.a.c.c.C.[.[localhost].[/quizapp] - Initializing Spring embedded WebApplicationContext
+17:31:40.372 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3342 ms
+17:31:40.873 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:31:41.156 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+17:31:41.162 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+17:31:41.898 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:31:41.956 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:31:42.534 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a3cf878
+17:31:42.538 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:31:42.668 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17:31:45.227 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17:31:45.485 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:31:46.088 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+17:31:46.366 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:31:46.949 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:31:46.997 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/quizapp'
+17:31:47.012 [main] INFO  c.example.quizapp.QuizappApplication - Started QuizappApplication in 11.075 seconds (process running for 12.703)
+17:32:29.936 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:32:29.940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:32:29.948 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:32:37.113 [main] INFO  c.example.quizapp.QuizappApplication - Starting QuizappApplication using Java 21.0.1 with PID 18296 (D:\spring boot working\quizapp\target\classes started by Manshi in D:\spring boot working\quizapp)
+17:32:37.129 [main] INFO  c.example.quizapp.QuizappApplication - No active profile set, falling back to 1 default profile: "default"
+17:32:38.435 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:32:38.563 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+17:32:39.893 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:32:39.897 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+17:32:39.911 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+17:32:39.936 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:32:39.943 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:32:39.944 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+17:32:40.230 [main] INFO  o.a.c.c.C.[.[localhost].[/quizapp] - Initializing Spring embedded WebApplicationContext
+17:32:40.231 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2952 ms
+17:32:40.828 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:32:41.132 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+17:32:41.139 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+17:32:41.886 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:32:41.933 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:32:42.320 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66d3b881
+17:32:42.323 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:32:42.388 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17:32:44.237 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17:32:44.459 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:32:45.213 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+17:32:45.529 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:32:46.143 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:32:46.194 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/quizapp'
+17:32:46.213 [main] INFO  c.example.quizapp.QuizappApplication - Started QuizappApplication in 9.977 seconds (process running for 11.39)
